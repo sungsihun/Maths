@@ -8,11 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AdditionQuestion : NSObject {
-    int num1;
-    int num2;
-}
+@interface AdditionQuestion : NSObject
 
-- (NSString *)question;
+@property (nonatomic, assign)NSString *question;
+@property (nonatomic, assign)NSInteger answer;
+    
+- (instancetype)init;
+    
 
 @end

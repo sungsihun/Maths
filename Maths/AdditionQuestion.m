@@ -10,10 +10,15 @@
 
 @implementation AdditionQuestion
 
-
-
-- (NSString *)question {
-    return [NSString stringWithFormat:@"%i", (arc4random_uniform(100) + 10)];
+- (instancetype)init {
+    if (self = [super init]) {
+        _question = [NSString stringWithFormat:@"%@ + %@ = ?", @(arc4random_uniform(91) + 10), @(arc4random_uniform(91) + 10)];
+        NSLog(@"%@", _question);
+    }
+    return self;
 }
+
+
+
 
 @end

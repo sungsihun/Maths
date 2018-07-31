@@ -12,27 +12,23 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        char inputNum[255];
+        while(TRUE) {
+            AdditionQuestion *maths = [[AdditionQuestion alloc] init];
+            
+            char inputNum[255];
+            
+            printf("input : ");
+            fgets(inputNum, 255, stdin);
+            
+            NSString *result = [NSString stringWithCString:inputNum encoding:NSUTF8StringEncoding];
+            
+            result = [result stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+            
+            NSLog(@"%@", result);
+        }
         
-        printf("input : ");
-        fgets(inputNum, 255, stdin);
-        
-        NSString *result = [NSString stringWithCString:inputNum encoding:NSUTF8StringEncoding];
-        
-        result = [result stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        
-        NSLog(@"%@", result);
         
         
-        
-        
-        
-        
-//        while (TRUE) {
-//            AdditionQuestion *maths = [[AdditionQuestion alloc] init];
-//            NSLog(@"%@", [maths question]);
-//            
-//        }
     }
     return 0;
 }
