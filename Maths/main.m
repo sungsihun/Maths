@@ -26,10 +26,12 @@ int main(int argc, const char * argv[]) {
             
             inputAns = [inputAns stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
             
+            if ([inputAns  isEqual: @"quit"]) {
+                break;
+            }
+            
             NSLog(@"%@", [maths evaluate:[inputAns intValue]]);
         }
-        
-        
     }
     return 0;
 }
