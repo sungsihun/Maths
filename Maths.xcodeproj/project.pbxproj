@@ -10,6 +10,7 @@
 		0698E40B2110C24F0027E7FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698E40A2110C24F0027E7FE /* main.m */; };
 		0698E4132110C4390027E7FE /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698E4122110C4390027E7FE /* AdditionQuestion.m */; };
 		0698E4162110E1CD0027E7FE /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698E4152110E1CD0027E7FE /* InputHandler.m */; };
+		0698E4192110E6AF0027E7FE /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698E4182110E6AF0027E7FE /* ScoreKeeper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		0698E4122110C4390027E7FE /* AdditionQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
 		0698E4142110E1CD0027E7FE /* InputHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
 		0698E4152110E1CD0027E7FE /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		0698E4172110E6AF0027E7FE /* ScoreKeeper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
+		0698E4182110E6AF0027E7FE /* ScoreKeeper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				0698E4152110E1CD0027E7FE /* InputHandler.m */,
 				0698E4112110C4390027E7FE /* AdditionQuestion.h */,
 				0698E4122110C4390027E7FE /* AdditionQuestion.m */,
+				0698E4172110E6AF0027E7FE /* ScoreKeeper.h */,
+				0698E4182110E6AF0027E7FE /* ScoreKeeper.m */,
 			);
 			path = Maths;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0698E4192110E6AF0027E7FE /* ScoreKeeper.m in Sources */,
 				0698E40B2110C24F0027E7FE /* main.m in Sources */,
 				0698E4162110E1CD0027E7FE /* InputHandler.m in Sources */,
 				0698E4132110C4390027E7FE /* AdditionQuestion.m in Sources */,

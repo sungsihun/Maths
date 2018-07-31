@@ -9,32 +9,25 @@
 #import <Foundation/Foundation.h>
 #import "AdditionQuestion.h"
 #import "InputHandler.h"
+#import "ScoreKeeper.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
+        ScoreKeeper *score = [[ScoreKeeper alloc] init];
+
         while(TRUE) {
             NSLog(@"MATHS!!");
             
             AdditionQuestion *maths = [[AdditionQuestion alloc] init];
-            InputHandler *in = [[InputHandler alloc] init];
-            NSString *input = [in getInput];
+            NSString *input = [InputHandler getInput];
             
-            
-//            char inputNum[255];
-//
-//            printf("input : ");
-//            fgets(inputNum, 255, stdin);
-//
-//            NSString *inputAns = [NSString stringWithCString:inputNum encoding:NSUTF8StringEncoding];
-//
-//            inputAns = [inputAns stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
             
             if ([input isEqual: @"quit"]) {
                 break;
             }
             
             NSLog(@"%@", [maths evaluate:[input intValue]]);
+            NSLog(@"%@", [score getScore:[maths evaluate:[input intValue]]]);
         }
     }
     return 0;

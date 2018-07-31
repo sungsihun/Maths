@@ -17,7 +17,6 @@
         _question = [NSString stringWithFormat:@"%@ + %@ = ?", @(num1), @(num2)];
         NSLog(@"%@", _question);
         _answer = num1 + num2;
-        
     }
     return self;
 }
