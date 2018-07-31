@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AdditionQuestion : NSObject
+@interface AdditionQuestion : NSObject 
 
 @property (nonatomic, assign)NSString *question;
 @property (nonatomic, assign)NSInteger answer;
