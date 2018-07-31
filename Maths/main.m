@@ -13,6 +13,8 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         while(TRUE) {
+            NSLog(@"MATHS!!");
+            
             AdditionQuestion *maths = [[AdditionQuestion alloc] init];
             
             char inputNum[255];
@@ -20,13 +22,12 @@ int main(int argc, const char * argv[]) {
             printf("input : ");
             fgets(inputNum, 255, stdin);
             
-            NSString *result = [NSString stringWithCString:inputNum encoding:NSUTF8StringEncoding];
+            NSString *inputAns = [NSString stringWithCString:inputNum encoding:NSUTF8StringEncoding];
             
-            result = [result stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+            inputAns = [inputAns stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
             
-            NSLog(@"%@", result);
+            NSLog(@"%@", [maths evaluate:[inputAns intValue]]);
         }
-        
         
         
     }

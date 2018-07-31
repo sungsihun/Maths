@@ -12,10 +12,22 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        _question = [NSString stringWithFormat:@"%@ + %@ = ?", @(arc4random_uniform(91) + 10), @(arc4random_uniform(91) + 10)];
+        int num1 = arc4random_uniform(91) + 10;
+        int num2 = arc4random_uniform(91) + 10;
+        _question = [NSString stringWithFormat:@"%@ + %@ = ?", @(num1), @(num2)];
         NSLog(@"%@", _question);
+        _answer = num1 + num2;
+        
     }
     return self;
+}
+
+- (NSString*)evaluate:(int)inputAns {
+    if (inputAns == self.answer) {
+        return @"Right!";
+    } else {
+        return @"Wrong!";
+    }
 }
 
 

@@ -14,6 +14,6 @@
 @property (nonatomic, assign)NSInteger answer;
     
 - (instancetype)init;
-    
+- (NSString*)evaluate:(int)inputAns;
 
 @end
