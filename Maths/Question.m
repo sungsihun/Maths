@@ -14,7 +14,6 @@
     if (self = [super init]) {
         _rightValue = arc4random_uniform(91) + 10;
         _leftValue = arc4random_uniform(91) + 10;
-        NSLog(@"%@", _question);
         _startTime = [NSDate date];
     }
     return self;
