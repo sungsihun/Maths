@@ -30,11 +30,11 @@
         _endTime = [NSDate date];
         return @"Wrong!";
     }
-    
 }
 
-- (float)answerTime {
-    NSDate *time = [NSDate timeIntervalSinceDate:_startTime];
+- (NSTimeInterval)answerTime {
+    NSTimeInterval timeDiff = [self.endTime timeIntervalSinceDate:self.startTime];
+    return timeDiff;
 }
 
 

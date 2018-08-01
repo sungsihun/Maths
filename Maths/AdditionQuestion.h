@@ -17,6 +17,6 @@
     
 - (instancetype)init;
 - (NSString*)evaluate:(int)inputAns;
-- (float)answerTime;
+- (NSTimeInterval)answerTime;
 
 @end
