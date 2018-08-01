@@ -17,19 +17,25 @@
         _question = [NSString stringWithFormat:@"%@ + %@ = ?", @(num1), @(num2)];
         NSLog(@"%@", _question);
         _answer = num1 + num2;
+        _startTime = [NSDate date];
     }
     return self;
 }
 
 - (NSString*)evaluate:(int)inputAns {
     if (inputAns == self.answer) {
+        _endTime = [NSDate date];
         return @"Right!";
     } else {
+        _endTime = [NSDate date];
         return @"Wrong!";
     }
+    
 }
 
-
+- (float)answerTime {
+    NSDate *time = [NSDate timeIntervalSinceDate:_startTime];
+}
 
 
 @end
