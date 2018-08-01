@@ -32,7 +32,7 @@
     }
 }
 
-- (NSTimeInterval)answerTime {
+- (float)answerTime {
     NSTimeInterval timeDiff = [self.endTime timeIntervalSinceDate:self.startTime];
     return timeDiff;
 }
