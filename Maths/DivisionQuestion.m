@@ -1,14 +1,14 @@
 //
-//  AdditionQuestion.m
+//  DivisionQuestion.m
 //  Maths
 //
 //  Created by NICE on 2018-08-01.
 //  Copyright © 2018 NICE. All rights reserved.
 //
 
-#import "AdditionQuestion.h"
+#import "DivisionQuestion.h"
 
-@implementation AdditionQuestion
+@implementation DivisionQuestion
 
 - (instancetype)init {
     if (self = [super init]) {
@@ -18,8 +18,8 @@
 }
 
 - (void)generateQuestion {
-    super.answer = super.rightValue + super.leftValue;
-    super.question = [NSString stringWithFormat:@"%ld + %ld = ?", (long)super.rightValue, super.leftValue];
+    super.answer = super.rightValue / super.leftValue;
+    super.question = [NSString stringWithFormat:@"%ld / %ld = ?", (long)super.rightValue, super.leftValue];
 }
 
 

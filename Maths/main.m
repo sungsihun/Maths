@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AdditionQuestion.h"
+#import "Question.h"
 #import "InputHandler.h"
 #import "ScoreKeeper.h"
 #import "QuestionManager.h"
@@ -20,7 +20,7 @@ int main(int argc, const char * argv[]) {
         while(TRUE) {
             NSLog(@"\n\nMATHS!!");
             
-            AdditionQuestion *maths = [[AdditionQuestion alloc] init];
+            Question *maths = [[Question alloc] init];
             NSString *input = [InputHandler getInput];
             
             
